@@ -1,5 +1,4 @@
 import random
-from dataclasses import dataclass
 
 card1 = 0
 card2 = 0
