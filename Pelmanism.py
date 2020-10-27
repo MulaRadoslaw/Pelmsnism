@@ -8,6 +8,18 @@ game_still_going = True
 # Create a list
 # assign a "random list" to cards
 
+# Creating players
+class Player:
+
+    def __init__(self, name):
+        self.name = name
+
+# Players names
+
+player1 = Player(input("Player1 name: ").capitalize())
+player2 = Player(input("Player2 name: ").capitalize())
+
+
 class Board:
     number_of_cards = 8
 
@@ -61,7 +73,7 @@ def deleting_cards():
         Board.remove_cards()
         display_board()
     else:
-        print(Board.board)
+        print(Board.board[card1][1])
 
 def game():
     global game_still_going
